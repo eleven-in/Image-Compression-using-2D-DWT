@@ -19,7 +19,7 @@ Filter bank implementation requires the following modules to implement DWT
 - 2D wavelet module (for column wise processing)
 - 2D DWT module (integration of all sub modules to form the final filter bank architecture)
 
-![](Aspose.Words.e3e82046-1436-420c-8c73-02a169882d6e.001.jpeg)
+![](Images/Aspose.Words.e3e82046-1436-420c-8c73-02a169882d6e.001.jpeg)
 
 Filter Bank Architecture
 
@@ -51,7 +51,7 @@ The subtraction module has two 8 bit inputs and one 8 bit output. The inputs are
 
 2. Implementation of DWT module and Modelsim Simulation
 
-![](Aspose.Words.e3e82046-1436-420c-8c73-02a169882d6e.002.png)
+![](Images/Aspose.Words.e3e82046-1436-420c-8c73-02a169882d6e.002.png)
 
 Hardwarw architecture
 
@@ -59,11 +59,11 @@ Hardwarw architecture
 
 The top DWT module consists of all instantiations of the above modules. It takes eight rows each of eight pixels as input and also outputs eight rows as output. It consists of eight 1D wavelet module instantiations and four 2D wavelet module instantiations. Apart from this, there is also a DWT valid signal which enables writing the output into hex file.
 
-![](Aspose.Words.e3e82046-1436-420c-8c73-02a169882d6e.003.png)
+![](Images/Aspose.Words.e3e82046-1436-420c-8c73-02a169882d6e.003.png)
 
 Modelsim Simulation 1
 
-![](Aspose.Words.e3e82046-1436-420c-8c73-02a169882d6e.004.png)
+![](Images/Aspose.Words.e3e82046-1436-420c-8c73-02a169882d6e.004.png)
 
 Modelsim Simulation 2
 
@@ -79,7 +79,7 @@ Modelsim Simulation 2
 
    HH - Contains high frequency information, typically noisy.
 
-![](Aspose.Words.e3e82046-1436-420c-8c73-02a169882d6e.005.png)
+![](Images/Aspose.Words.e3e82046-1436-420c-8c73-02a169882d6e.005.png)
 
 Image Compression
 
@@ -90,7 +90,7 @@ Image Compression
 
    Using Eclipse for NIOS II and some specific BSP generator settings and compiling the design a Serial Vector File (.svf) generated which is dumped on FPGA using JTAG UART and the output is being printed on Docklight terminal using serial communication through UART implementing RS232 protocol.
 
-![](Aspose.Words.e3e82046-1436-420c-8c73-02a169882d6e.006.png)
+![](Images/Aspose.Words.e3e82046-1436-420c-8c73-02a169882d6e.006.png)
 
 Component utilization report
 
